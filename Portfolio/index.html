@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waslyl's Portfolio</title>
+    <link rel="stylesheet" href="src/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/solid.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/brands.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cursor-glow"></div>
+
+    <nav class="nav-bar">
+        <div class="logo">Waslyl</div>
+        <ul class="nav-links">
+            <li><a href="#home" class="active" data-translate="home">Home</a></li>
+            <li><a href="#about" data-translate="about">About</a></li>
+            <li><a href="#projects" data-translate="projects">Projects</a></li>
+            <li><a href="#skills" data-translate="skills">Skills</a></li>
+        </ul>
+        <div class="language-switch">
+            <button class="lang-btn active" onclick="switchLanguage('en')">EN</button>
+            <button class="lang-btn" onclick="switchLanguage('fr')">FR</button>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="profile-container">
+                <div class="profile-photo">
+                    <img src="https://avatars.githubusercontent.com/u/129678963?v=4" alt="Profile Photo" id="profile-img">
+                </div>
+                <div class="hero-text">
+                    <h1 class="glitch-text" data-translate="heyItsWas">Hey, It's Was</h1>
+                    <p class="typing-text"></p>
+                    <div class="cta-buttons">
+                        <a href="#projects" class="btn primary" data-translate="viewProjects">View Projects</a>
+                        <a href="#contact" class="btn secondary" data-translate="contactMe">Contact Me</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-background">
+            <div class="grid"></div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="about-container" data-aos="fade-up">
+            <h2 data-translate="aboutMe">About Me</h2>
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right" data-aos-delay="200">
+                    <div class="en-content">
+                        <p>Hey, I'm Was, I'm French and I live in Lyon, France.</p>
+                        <p>I'm from an international school, I speak 4 languages (French, English, German and a bit of Spanish).</p>
+                        <p>I'm a young developer with a passion for coding since 4 years ago.</p>
+                        <p>I've done a lot of projects such as GalaxiaFN that is a remake of the famous game Fortnite Battle Royal.</p>
+                        <p>As a developer, I have experience in C# and C++ and I'm currently learning Python for AI and Computer Science.</p>
+                    </div>
+                    <div class="fr-content" style="display: none;">
+                        <p>Salut, c'est Was, je suis Français et j'habite à Lyon.</p>
+                        <p>Je suis dans une école internationale et je parle 4 langues (Français, Anglais, Allemand et un peu d'Espagnol).</p>
+                        <p>Je suis un jeune développeur passionné par la programmation depuis 4 ans.</p>
+                        <p>J'ai réalisé de nombreux projets comme GalaxiaFN qui est une reproduction du célèbre jeu Fortnite Battle Royal.</p>
+                        <p>En tant que développeur, j'ai de l'expérience en C# et C++ et j'apprends actuellement Python pour l'IA et les Computer Science.</p>
+                    </div>
+                </div>
+                <div class="about-stats" data-aos="fade-left" data-aos-delay="400">
+                    <div class="stat-item">
+                        <span class="stat-number">4</span>
+                        <span class="stat-label" data-translate="yearsOfCoding">Years of Coding</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">15</span>
+                        <span class="stat-label" data-translate="yearsOld">Years Old</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">10</span>
+                        <span class="stat-label" data-translate="grade">Grade</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects" data-aos="fade-up">
+        <h2 data-translate="myProjects">My Projects</h2>
+        <div class="project-grid">
+        </div>
+    </section>
+
+    <section id="skills" class="skills" data-aos="fade-up">
+        <h2 data-translate="skillsAndTech">Skills & Technologies</h2>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3 data-translate="webDev">Web Development</h3>
+                <div class="skill-items">
+                    <div class="skill-item"><i class="fa-brands fa-html5"></i> HTML5</div>
+                    <div class="skill-item"><i class="fa-brands fa-css3-alt"></i> CSS3</div>
+                    <div class="skill-item"><i class="fa-brands fa-js"></i> JavaScript</div>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3 data-translate="progLang">Programming Languages</h3>
+                <div class="skill-items">
+                    <div class="skill-item"><i class="fa-brands fa-windows"></i> C#</div>
+                    <div class="skill-item"><i class="fas fa-code"></i> C++</div>
+                    <div class="skill-item"><i class="fa-brands fa-python"></i> Python</div>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3 data-translate="otherSkills">Other Skills</h3>
+                <div class="skill-items">
+                    <div class="skill-item"><i class="fas fa-bug"></i> <span data-translate="reverseEng">Reverse Engineering</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://github.com/waslyl" class="social-link" target="_blank" title="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.youtube.com/@galaxiaproject" class="social-link" target="_blank" title="YouTube">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="https://x.com/Galaxia_Fn" class="social-link" target="_blank" title="X (Twitter)">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+            </div>
+            <div class="footer-text">
+                <p>Follow me on social media!</p>
+                <p>&copy; 2025 Was. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function switchLanguage(lang) {
+            const elements = document.querySelectorAll('[data-translate]');
+            elements.forEach(element => {
+                const translation = element.getAttribute(`data-translate-${lang}`);
+                if (translation) {
+                    element.textContent = translation;
+                }
+            });
+
+            const langButtons = document.querySelectorAll('.lang-btn');
+            langButtons.forEach(button => {
+                button.classList.remove('active');
+            });
+            document.querySelector(`.lang-btn[data-lang="${lang}"]`).classList.add('active');
+
+            const aboutText = document.querySelector('.about-text');
+            if (lang === 'en') {
+                aboutText.querySelector('.en-content').style.display = 'block';
+                aboutText.querySelector('.fr-content').style.display = 'none';
+            } else if (lang === 'fr') {
+                aboutText.querySelector('.en-content').style.display = 'none';
+                aboutText.querySelector('.fr-content').style.display = 'block';
+            }
+        }
+    </script>
+
+    <script src="src/translate.js"></script>
+    <script src="src/script.js"></script>
+</body>
+</html>
